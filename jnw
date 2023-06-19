@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+source _common.sh
+source _insert_header.sh
+$VISUAL +"norm G" +"startinsert" $JPATH/journal.txt
+
