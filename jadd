@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-source _common.sh
-source _insert_header.sh
-echo "$@" >> $JPATH/journal.txt
