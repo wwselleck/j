@@ -3,11 +3,12 @@
 Tiny utility for managing a journal file
 
 ```sh
+$> curl -o /usr/local/bin/j https://raw.githubusercontent.com/wwselleck/j/master/j
 
 # Write new journal entry using vim
-$> jnw
+$> j
 
 # Write new journal entry using given text
-$> jadd TODO[]: Get milk
+$> j TODO[]: Get milk
 
 ```
