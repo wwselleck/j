@@ -6,7 +6,7 @@ if [[ -z "${JPATH}" ]]; then
 fi
 
 now="$(date +'%Y-%m-%d %H:%M:%S')"
-echo -e "\n-------------\n${now}\n" >> $JPATH/journal.txt
+echo -e "\n-------------${now}-------------\n" >> $JPATH/journal.txt
 
 case $1 in
     "")
