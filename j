@@ -6,13 +6,17 @@ if [[ -z "${JPATH}" ]]; then
 fi
 
 now="$(date +'%Y-%m-%d %H:%M:%S')"
-echo -e "-------------${now}-------------\n" >> $JPATH/journal.txt
 
 case $1 in
     "")
+        echo -e "-------------${now}-------------\n" >> $JPATH/journal.txt
         $VISUAL +"norm Go" +"startinsert" $JPATH/journal.txt
         ;;
+    "view")
+        $VISUAL +"norm G" $JPATH/journal.txt
+        ;;
     *)
+        echo -e "-------------${now}-------------\n" >> $JPATH/journal.txt
         echo "$@" >> $JPATH/journal.txt
         ;;
 esac
